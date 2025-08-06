@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 빛 축제_flex</title>
+    
+
+
+    <style>
+        body {
+            width: 1000px;
+            height: 650px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #000;
+            display: flex;
+
+        }
+
+        header {
+            width: 200px;
+            height: 650px;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100%;
+            height: 100px;
+            border: 1px dashed #000;
+            text-align: center;
+            align-content: center;
+        }
+
+        .nav {
+            width: 150px;
+            height: 300px;
+            border: 1px dashed #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            margin-top: 20px;
+
+        }
+
+        .menu {
+            position: relative;
+        }
+
+
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        .subMenu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: white;
+            z-index: 100;
+            width: 150px;
+        }
+
+        .subMenu a {
+            background-color: deepskyblue;
+        }
+
+        .subMenu li:hover a {
+            color: lightpink;
+            background-color: deeppink;
+            font-weight: 600;
+        }
+
+
+        .content {
+            height: 650px;
+            width: 800px;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .slide {
+            width: 100%;
+            height: 350px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mu_0 {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            border: 1px solid #000;
+
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+
+            border: 1px solid #000;
+            align-items: center;
+        }
+
+        .logo2 {
+            width: 100px;
+            height: 100%;
+            margin: 0;
+            border: 1px dashed #000;
+            text-align: center;
+            align-content: center;
+        }
+
+        .footer_mu {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000;
+            display: flex;
+            align-items: stretch;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+
+        .down_mu {
+            width: 100%;
+            height: 50%;
+            border: 1px dashed #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .copyright {
+            width: 100%;
+            height: 50%;
+            border: 1px dashed #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mu1,
+        .mu2,
+        .mu3 {
+            width: 33.33%;
+            height: 100%;
+            border: 1px dashed #000;
+            text-align: center;
+            line-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">로고</div>
+        <nav class="nav">
+            <ul>
+                <li class="menu">
+                    <a href="#">이용안내</a>
+                    <ul class="subMenu">
+                        <li><a href="#">이용방법</a></li>
+                        <li><a href="#">이용시간</a></li>
+                        <li><a href="#">이용요금</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">이벤트정보</a>
+                    <ul class="subMenu">
+                        <li><a href="#">현장이벤트</a></li>
+                        <li><a href="#">온라인이벤트</a></li>
+                        <li><a href="#">이벤트예약</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">프로그램</a>
+                    <ul class="subMenu">
+                        <li><a href="#">프로그램안내</a></li>
+                        <li><a href="#">온라인예약</a></li>
+                        <li><a href="#">단체예약상담</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">고객센터</a>
+                    <ul class="subMenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주하는질문</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+
+        <div class="slide">이미지 슬라이드</div>
+        <div class="mu_0">
+            <div class="mu1">메뉴1</div>
+            <div class="mu2">메뉴2</div>
+            <div class="mu3">메뉴3</div>
+        </div>
+
+
+        <footer>
+
+            <div class="logo2">로고</div>
+            <div class="footer_mu">
+                <div class="down_mu">하단메뉴</div>
+                <div class="copyright">카피라이터</div>
+            </div>
+        </footer>
+
+    </div>
+<script src="./js/jquery-3.7.1.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".menu").hover(
+                function () {
+                    $(this).find(".subMenu").stop().slideDown();
+                },
+                function () {
+                    $(this).find(".subMenu").stop().slideUp();
+                }
+            );
+        });
+    </script>
+
+
+</body>
+
+</html>

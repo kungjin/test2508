@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>｢대한은행｣ flex</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #000;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0
+
+        }
+
+        .content {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #000;
+            display: flex;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            border: 1px solid #000;
+            margin: 0;
+        }
+        .footer_mu {
+            width: 80%;
+            height: 100px;
+            border: 1px solid #000;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .logo {
+            width: 100px;
+            height: 80px;
+            margin-left: 10px;
+            border: 1px dashed #000;
+            text-align: center;
+            align-content: center;
+        }
+
+        .img_slide {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content_mu {
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .mu1 {
+            width: 35%;
+            height: 100%;
+            border: 1px dashed #000;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .mu2 {
+            width: 30%;
+            height: 100%;
+            border: 1px dashed #000;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .mu3 {
+            width: 35%;
+            height: 100%;
+            border: 1px dashed #000;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo2{
+            border: 1px dashed #000;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             height: 100%;
+            
+        }
+
+        .copyright {
+            border: 1px dashed #000;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             height: 50%;
+            
+        }
+        .down_mu {
+            width: 80%;
+            height: 50%;
+            border: 1px dashed #000;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .logo2 {
+            width: 20%;
+           
+        }
+
+        .copyright {
+            width: 80%;
+        }
+
+        .down_mu {
+            width: 80%;
+        }
+
+        .main_mu {
+            width: 500px;
+            height: 50%;
+            border: 1px solid #000;
+            display: flex;
+            margin-left: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>로고</p>
+        </div>
+        <div class="main_mu">
+
+        </div>
+    </header>
+    <div class="slide">
+
+        <div class="img_slide">
+            이미지 슬라이드
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="mu1">공지사항(C1)/ 갤러리(C2)</div>
+        <div class="mu2">배너(C3)</div>
+        <div class="mu3">바로가기(C4)</div>
+    </div>
+    <footer>
+        
+            <div class="logo2"> 로고</div>
+            <div class="footer_mu">
+            <div class="copyright"> 카퓌라이터</div>
+            <div class="down_mu">하단 메뉴</div>
+            </div>
+       
+    </footer>
+
+
+</body>
+</body>
+</html>
